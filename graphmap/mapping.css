@@ -1,0 +1,41 @@
+html, body, #map {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	margin-bottom: 0px;
+}
+
+#map {
+	height: 90%;
+}
+
+#map-header h2 {
+	margin: 0px; 
+}
+
+#select-opts div, #legend div {
+	display: inline;
+}
+
+.stations, .stations svg {
+	position: absolute;
+}
+
+.stations svg, #legend svg {
+	width: 20px;
+	height: 20px;
+}
+
+.stations circle, #legend circle {
+	stroke: black;
+	stroke-width: 1.5px;
+}
+
+#legend svg {
+	margin-right: -4px;
+	margin-bottom: -5px;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!--META-->
+	<title>MduP OPD Data Vis Map</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	
+	<!--LINK-->
+	<link rel="stylesheet" type="text/css" href="mapping.css" />
+	
+	<!--SCRIPT-->
+	<script type='text/javascript' src='https://maps.google.com/maps/api/js?sensor=true'></script>
+	<script type='text/javascript' src='../d3/d3.v3.min.js'></script>
+</head>
+
+<body>
+	<h1>Orlando Police Dispatches - Map</h1>
+	<div id='map-header'>
+		<div style='display: inline;'>
+			<button id='back-button' onclick='window.history.back()' style='display: none;'>Back</button>
+			<button id='detail-toggle' onclick='toggleDetails()'>Hide additional info</button>
+		</div>
+		<div id='additional-details'>
+			<div>Data ranges from 2009-05-09 to 2015-08-21. Mouseover/touch map elements to display event details. Changing year or month fetches new datafiles (use sparingly on mobile).<br>For an exploatory analysis of this data, you can <a href='http://mdupont.com/Programming/OPD-EDA' target='_blank'>read my full report</a>.</div>
+			<div id='select-opts' style='display: inline;'>
+				<b>Date: </b>
+				<div>
+					<select id='opt-year-field'>
+						<option value='2009'>2009</option>
+						<option value='2010'>2010</option>
+						<option value='2010'>2011</option>
+						<option value='2010'>2012</option>
+						<option value='2010'>2013</option>
+						<option value='2010'>2014</option>
+						<option value='2010'>2015</option>
+					</select>
+				</div>
+				<div>
+					<select id='opt-month-field'>
+						<option value='1'>Jan</option>
+						<option value='2'>Feb</option>
+						<option value='3'>Mar</option>
+						<option value='4'>Apr</option>
+						<option value='5'>May</option>
+						<option value='6'>Jun</option>
+						<option value='7'>Jul</option>
+						<option value='8'>Aug</option>
+						<option value='9'>Sep</option>
+						<option value='10'>Oct</option>
+						<option value='11'>Nov</option>
+						<option value='12'>Dec</option>
+					</select>
+				</div>
+				<div>
+					<select id='opt-day-field'>
+						<option value='1'>1</option>
+						<option value='2'>2</option>
+						<option value='3'>3</option>
+						<option value='4'>4</option>
+						<option value='5'>5</option>
+						<option value='6'>6</option>
+						<option value='7'>7</option>
+						<option value='8'>8</option>
+						<option value='9'>9</option>
+						<option value='10'>10</option>
+						<option value='11'>11</option>
+						<option value='12'>12</option>
+						<option value='13'>13</option>
+						<option value='14'>14</option>
+						<option value='15'>15</option>
+						<option value='16'>16</option>
+						<option value='17'>17</option>
+						<option value='18'>18</option>
+						<option value='19'>19</option>
+						<option value='20'>20</option>
+						<option value='21'>21</option>
+						<option value='22'>22</option>
+						<option value='23'>23</option>
+						<option value='24'>24</option>
+						<option value='25'>25</option>
+						<option value='26'>26</option>
+						<option value='27'>27</option>
+						<option value='28'>28</option>
+						<option value='29'>29</option>
+						<option value='30'>30</option>
+						<option value='31'>31</option>
+					</select>
+				</div>
+				<div>
+					<button id='show-day'>Show</button>
+				</div>
+			</div>
+			<div id='legend'>
+				<div id='legend-violent'>
+					<svg><circle r='7' cx='10' cy='10'></circle></svg>
+					<b>Violent: </b><span></span>
+				</div>
+				<div id='legend-nonviolent'>
+					<svg><circle r='7' cx='10' cy='10'></circle></svg>
+					<b>Nonviolent: </b><span></span>
+				</div>
+				<div id='legend-transport'>
+					<svg><circle r='7' cx='10' cy='10'></circle></svg>
+					<b>Transport: </b><span></span>
+				</div>
+				<div id='legend-oncall'>
+					<svg><circle r='7' cx='10' cy='10'></circle></svg>
+					<b>Oncall: </b><span></span>
+				</div>
+				<div id='legend-other'>
+					<svg><circle r='7' cx='10' cy='10'></circle></svg>
+					<b>Other: </b><span></span>
+				</div>
+			</div>
+		</div>
+		<div id='dispatch-details'>
+			<div><b>Reason: </b><span id='det-reason'></span></div>
+			<div><b>Category: </b><span id='det-category'></span></div>
+			<div><b>Time: </b><span id='det-time'></span></div>
+			<div><b>Coords: </b><span id='det-coords'></div>
+		</div>
+	</div>
+	
+	<div id='map'></div>
+	
+	<script type='text/javascript' src='mapping.js'></script>
+</body>
+</html>

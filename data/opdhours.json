@@ -1,0 +1,218 @@
+{
+    "0": {
+        "total": {
+            "nonviolent": 2582,
+            "oncall": 20531,
+            "other": 2013,
+            "transport": 3792,
+            "violent": 3417
+        }
+    },
+    "1": {
+        "total": {
+            "nonviolent": 2108,
+            "oncall": 17605,
+            "other": 1979,
+            "transport": 2902,
+            "violent": 3005
+        }
+    },
+    "10": {
+        "total": {
+            "nonviolent": 5382,
+            "oncall": 20174,
+            "other": 2913,
+            "transport": 7012,
+            "violent": 3179
+        }
+    },
+    "11": {
+        "total": {
+            "nonviolent": 5780,
+            "oncall": 20945,
+            "other": 2634,
+            "transport": 7401,
+            "violent": 3608
+        }
+    },
+    "12": {
+        "total": {
+            "nonviolent": 5866,
+            "oncall": 21332,
+            "other": 2630,
+            "transport": 8074,
+            "violent": 3905
+        }
+    },
+    "13": {
+        "total": {
+            "nonviolent": 6170,
+            "oncall": 21543,
+            "other": 3973,
+            "transport": 8207,
+            "violent": 4124
+        }
+    },
+    "14": {
+        "total": {
+            "nonviolent": 6646,
+            "oncall": 21874,
+            "other": 6231,
+            "transport": 8478,
+            "violent": 4300
+        }
+    },
+    "15": {
+        "total": {
+            "nonviolent": 6881,
+            "oncall": 22927,
+            "other": 3173,
+            "transport": 9189,
+            "violent": 4699
+        }
+    },
+    "16": {
+        "total": {
+            "nonviolent": 6529,
+            "oncall": 23872,
+            "other": 2314,
+            "transport": 9391,
+            "violent": 5024
+        }
+    },
+    "17": {
+        "total": {
+            "nonviolent": 5010,
+            "oncall": 19641,
+            "other": 1831,
+            "transport": 8115,
+            "violent": 4078
+        }
+    },
+    "18": {
+        "total": {
+            "nonviolent": 7954,
+            "oncall": 26703,
+            "other": 2204,
+            "transport": 10157,
+            "violent": 6192
+        }
+    },
+    "19": {
+        "total": {
+            "nonviolent": 5836,
+            "oncall": 24681,
+            "other": 2400,
+            "transport": 7076,
+            "violent": 5089
+        }
+    },
+    "2": {
+        "total": {
+            "nonviolent": 1778,
+            "oncall": 15144,
+            "other": 2079,
+            "transport": 2995,
+            "violent": 3484
+        }
+    },
+    "20": {
+        "total": {
+            "nonviolent": 4880,
+            "oncall": 23510,
+            "other": 2184,
+            "transport": 5560,
+            "violent": 4694
+        }
+    },
+    "21": {
+        "total": {
+            "nonviolent": 4359,
+            "oncall": 23845,
+            "other": 2415,
+            "transport": 5440,
+            "violent": 4598
+        }
+    },
+    "22": {
+        "total": {
+            "nonviolent": 3790,
+            "oncall": 23556,
+            "other": 2148,
+            "transport": 5002,
+            "violent": 4369
+        }
+    },
+    "23": {
+        "total": {
+            "nonviolent": 3120,
+            "oncall": 22818,
+            "other": 2026,
+            "transport": 4384,
+            "violent": 3862
+        }
+    },
+    "3": {
+        "total": {
+            "nonviolent": 1619,
+            "oncall": 13928,
+            "other": 1506,
+            "transport": 2858,
+            "violent": 2793
+        }
+    },
+    "4": {
+        "total": {
+            "nonviolent": 1216,
+            "oncall": 10876,
+            "other": 1167,
+            "transport": 1805,
+            "violent": 1652
+        }
+    },
+    "5": {
+        "total": {
+            "nonviolent": 880,
+            "oncall": 9654,
+            "other": 1080,
+            "transport": 1531,
+            "violent": 1048
+        }
+    },
+    "6": {
+        "total": {
+            "nonviolent": 1094,
+            "oncall": 11096,
+            "other": 1832,
+            "transport": 2745,
+            "violent": 1062
+        }
+    },
+    "7": {
+        "total": {
+            "nonviolent": 1885,
+            "oncall": 12055,
+            "other": 5621,
+            "transport": 4939,
+            "violent": 1373
+        }
+    },
+    "8": {
+        "total": {
+            "nonviolent": 3108,
+            "oncall": 15158,
+            "other": 3811,
+            "transport": 7368,
+            "violent": 2137
+        }
+    },
+    "9": {
+        "total": {
+            "nonviolent": 4541,
+            "oncall": 18019,
+            "other": 2772,
+            "transport": 7422,
+            "violent": 2740
+        }
+    }
+}

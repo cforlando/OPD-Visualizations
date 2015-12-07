@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Can be found at http://mdupont.com/Programming/OPD-Data-Vis/ -->
+
+<head>
+	<!--META-->
+	<title>MduP OPD Data Vis</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	
+	<!--LINK-->
+	<link rel="stylesheet" type="text/css" href="graphs.css" />
+	
+	<!--SCRIPT-->
+	<script type='text/javascript' src='../d3/d3.v3.min.js'></script>
+	<script type='text/javascript' src='../d3/dimple.v2.1.6.min.js'></script>
+</head>
+
+<body>
+	<h1>Orlando Police Dispatches</h1>
+	<div id='graph-header'>
+		<div><button id='detail-toggle' onclick='toggleDetails()'>Hide additional info</button></div>
+		<div id='additional-details'>
+			<div>Explore the Orlando Police Dispatch records for dates ranging from 2009-05-09 to 2015-08-21. Bars show the number of dispatches broken down by the categories listed below. Hovering over a section will display additional information. Clicking on a year or month bar will display a new chart with that time period. Clicking on a day will open a new page so you can explore that day's dispatches on a map.</div>
+			<div>For an exploatory analysis of this data, you can <a href='http://mdupont.com/Programming/OPD-EDA' target='_blank'>read my full report</a>.</div>
+			<div id='legend'>
+				<div><h3>Legend</h3></div>
+				<div id='legend-violent'>
+					<svg><circle r='7' cx='10' cy='10'></circle></svg>
+					<b>Violent:</b>
+					<span>violent crimes such as murder, kidnapping, and battery</span>
+				</div>
+				<div id='legend-nonviolent'>
+					<svg><circle r='7' cx='10' cy='10'></circle></svg>
+					<b>Nonviolent:</b>
+					<span>non-violent crimes such as criminal mischief, drug violations, and breaking & entering</span>
+				</div>
+				<div id='legend-transport'>
+					<svg><circle r='7' cx='10' cy='10'></circle></svg>
+					<b>Transport:</b>
+					<span>involving vehicles, roads, and waterways (that are not considered violent crimes like DUI) including accidents and reckless boating</span>
+				</div>
+				<div id='legend-oncall'>
+					<svg><circle r='7' cx='10' cy='10'></circle></svg>
+					<b>Oncall:</b>
+					<span>where police responded to a non-criminal call like a 911 hang up, dead animal, or suspicious person</span>
+				</div>
+				<div id='legend-other'>
+					<svg><circle r='7' cx='10' cy='10'></circle></svg>
+					<b>Other:</b>
+					<span>anything else that doesn’t fall into these categories like school zone crossings, bike patrols, and escorts</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id='graph-back'><button id='go-back' style='visibility: hidden;'><b>Back</b></button></div>
+	<div id='graph-title'><h2></h2></div>
+	<div id='graph'></div>
+	<script type='text/javascript' src='graphs.js'></script>
+</body>
+</html>
